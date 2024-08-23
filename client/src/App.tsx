@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/chat' element={<Chat />} />
+        <Route path='/' element={<Home socket={socket} />} />
+        <Route path='/chat' element={<Chat socket={socket} />} />
       </Routes>
     </>
   )
